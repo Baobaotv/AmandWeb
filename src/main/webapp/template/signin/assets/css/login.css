@@ -1,0 +1,140 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* background: url('/login/assets/img/img12.jpg') no-repeat; */
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+/* .login__box{
+    position: absolute;
+    width: 400px;
+    height: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-left: 25%;
+    border: 2px solid pink; */
+    
+    
+    /* color: white;
+} */
+
+.login__box{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    z-index: 999;
+    text-align: center;
+    padding: 60px 32px;
+    width: 370px;
+    height: 350px;
+    transform: translate(-50%,-50%);
+    background: rgba(255,255,255,0.04);
+    box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+  }
+ 
+::placeholder{
+    color: rgb(104, 108, 108);
+}
+.login__box h2 {
+    /* float: left; */
+    font-size: 33px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-align: center;
+    /* padding: 13px 0 ; */
+    color: white;
+    font-family: 'Montserrat',sans-serif;
+}
+.textbox{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0 ;
+    margin: 8px 0 ;
+    border-bottom: 2px solid #fffcfc;
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.textbox i{
+    width: 25px;
+    float: left;
+    text-align: center;
+    color: black;
+    margin-left: 7px;
+    margin-top: 3px;
+
+}
+.textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    color: black;
+    width: 80%;
+    float: left;
+    margin-top: 3px;
+    margin-left: 6px;
+    
+}
+.btn{
+    width: 79%;
+    margin: 20px 0;
+    padding: 4px 0;
+    background: #3498db;
+    border: 1px solid #2691d9;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Montserrat',sans-serif;
+}
+.btn:hover{
+    background: #2691d9;
+}
+.main-header{
+    background-color: rgb(167, 181, 198);
+    height: 50px;
+    width: 13%;
+    margin-left: 20px;
+}
+h1{
+ color: rgb(25, 24, 24);
+ padding-left: 25px;
+ padding-top: 6.5px;
+ font-weight: 300;
+ 
+}
+
+   
+
+.button{
+    display: flex;
+}
+.btn-re{
+    background-color: rgb(241, 235, 235);
+    padding-top: 0px;
+    padding-left: 10px;
+    border: 2px solid #8e848c ;
+    margin: 20px 0;
+    padding: 4px 0;
+    margin-left: 15px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Poppins',sans-serif;
+}
+.btn-re a{
+    color: #3498db;
+    text-decoration: none;
+}
+.btn-re a:hover{
+    text-decoration: underline;
+}
+
+
+

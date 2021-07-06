@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* background: url('/form__DKI/assets/img/img9.jpg') no-repeat; */
+    background-size: cover;
+}
+.form__submit{
+   border-radius: 5px;
+    height: 550px;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    z-index: 999;
+    text-align: center;
+    padding: 60px 32px;
+    width: 400px;
+    transform: translate(-50%,-50%);
+    background: rgba(255,255,255,0.04);
+    box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+    
+   
+
+}
+.form__submit h1{
+    font-size: 33px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat',sans-serif;
+}
+.label-name{
+    color: rgb(104, 108, 108);
+    font-size: 17px;
+    font-weight: 700;
+    float: left;
+    padding-left: 8px;
+}
+.text-box{
+
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin:20px 0;
+    background-color: white;
+    border-bottom: 2px solid #fffcfc;
+    border-radius: 10px;
+}
+::placeholder {
+    color: rgb(171, 184, 162);
+}
+.text-box input{
+    border: none;
+    outline: none;
+    background: none;
+    color: black;
+    width: 80%;
+    float: left;
+    margin-top: 3px;
+    margin-left: 6px;
+}
+.text-box i{
+    
+    line-height: 22px;
+    font-size: 16px;
+    color: rgb(19, 1, 1);
+    width: 20px;
+    text-align: center;
+    float: left;
+    margin-left: 7px;
+    margin-top: 3px;
+    
+}
+.btn{
+    
+    width: 100%;
+    margin: 12px 0;
+    padding: 4px 0;
+    background: #3498db;
+    border: 1px solid #2691d9;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Montserrat',sans-serif;
+}
+.btn:hover{
+    background: #2691d9;
+}
+.main-header{
+    background-color: rgb(167, 181, 198);
+    height: 50px;
+    width: 13%;
+    margin-left: 20px;
+}
+h1{
+    color: rgb(25, 24, 24);
+    padding-left: 25px;
+    padding-top: 6.5px;
+    font-weight: 300;
+}
+.container{
+    margin: 20px;
+    
+}

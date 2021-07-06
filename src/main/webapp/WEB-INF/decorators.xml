@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/decorators">
+    <!-- Any urls that are excluded will never be decorated by Sitemesh -->
+    <excludes>
+        <pattern>/api*</pattern>
+    </excludes>
+    
+    <!-- apply Sitemesh default template -->
+    <decorator name="admin" page="admin.jsp">
+        <pattern>/quan-tri*</pattern>
+    </decorator>
+    
+    <decorator name="web" page="web.jsp">
+        <pattern>/*</pattern>
+    </decorator>
+    <decorator name="product" page="web.jsp">
+        <pattern>/product*</pattern>
+    </decorator>
+    <decorator name="bag" page="web.jsp">
+        <pattern>/bag*</pattern>
+    </decorator>
+    <decorator name="signin" page="signin.jsp">
+        <pattern>/dang-nhap*</pattern>
+    </decorator>
+    <decorator name="signup" page="signup.jsp">
+        <pattern>/dang-ki*</pattern>
+    </decorator>
+    
+</decorators>

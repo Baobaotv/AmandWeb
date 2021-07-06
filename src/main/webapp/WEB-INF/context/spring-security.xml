@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans
+	xmlns="http://www.springframework.org/schema/security"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
+	<http auto-config="false" use-expressions="true">
+		<!-- <intercept-url pattern="/quan-tri/admin**" access="hasRole('ADMIN')" 
+			/> -->
+		<intercept-url pattern="/quan-tri**" access="hasAnyRole('ADMIN' ,'MANAGER')" />
+		 
+		<intercept-url access="permitAll" pattern="/trang-chu" />
+		<form-login login-page="/dang-nhap"
+			login-processing-url="/j_spring_security_login"
+			default-target-url="/quan-tri"
+			authentication-failure-url="/dang-nhap?error"
+			username-parameter="username"
+			password-parameter="password"
+			authentication-success-handler-ref="customSuccessHandler" />
+		<access-denied-handler error-page="/403" />
+		<logout logout-url="/j_spring_security_logout"
+			logout-success-url="/dang-xuat" delete-cookies="JSESSIONID" />
+	</http>
+	<authentication-manager>
+		<authentication-provider
+			user-service-ref="customUserDetailsService">
+			<!--  <password-encoder ref="bcryptEncoder" />  -->
+		</authentication-provider>
+	</authentication-manager>
+
+	<!-- <beans:bean id="bcryptEncoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder" 
+		/> -->
+	<beans:bean id="customUserDetailsService"
+		class="com.baitaplon.securiry.CustomUserDetailsService" />
+	<beans:bean id="customSuccessHandler"
+		class="com.baitaplon.securiry.CustomSuccessHandler" />
+
+	<beans:bean id="CustomAccessDeniedHandler"
+		class="com.baitaplon.securiry.CustomAccessDeniedHandler" />
+</beans:beans>
